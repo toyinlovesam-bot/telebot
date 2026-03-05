@@ -46,7 +46,7 @@ def health():
     return "OK", 200
 
 def run_flask():
-    app.run(host='0.0.0.0', port=PORT)
+    app.run(host="0.0.0.0", port=PORT, debug=False, use_reloader=False)
 
 def contains_telegram_link(text: str) -> bool:
     """Check if text contains any Telegram link patterns"""
